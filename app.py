@@ -46,5 +46,5 @@ async def retrieve_order_by_number(order_number):
         return {}
 
 if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=8080, reload=True,
+    uvicorn.run("app:app", host="127.0.0.1", port=8080, reload=True,
                 timeout_keep_alive=3600, debug=True, workers=10)
